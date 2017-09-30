@@ -19,8 +19,8 @@ Once connected you can hash a message with 3 different algorithm: sha1 sha2 or m
 
 ### terminal 1
 
-- ```mkdir ~/db```
-- ```mongod -dbpath ~/db```
+- ```mkdir $HOME/db```
+- ```mongod --dbpath=$HOME/db```
 
 ### terminal 2
 
