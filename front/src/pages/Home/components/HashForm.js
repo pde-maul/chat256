@@ -8,21 +8,12 @@ import SelectField from 'material-ui/SelectField'
 import MenuItem from 'material-ui/MenuItem'
 import Flex from '_components/Flex'
 
-const renderSelectField = ({
-  input,
-  label,
-  meta: { touched, error },
-  children,
-  ...custom
-}) => (
+const renderSelectField = ({ input }) => (
   <SelectField
     floatingLabelText={'Algorithm'}
     style={{ textAlign: 'left' }}
-    errorText={touched && error}
     {...input}
     onChange={(event, index, value) => input.onChange(value)}
-    children={children}
-    {...custom}
   >
     <MenuItem value={'md5'} primaryText='md5' />
     <MenuItem value={'sha1'} primaryText='sha1' />
